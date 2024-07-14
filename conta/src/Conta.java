@@ -5,7 +5,7 @@ public class Conta {
 
         String nome;
         int idade;
-        double cpf;
+        String cpf;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -22,13 +22,20 @@ public class Conta {
 
         if (scanf.equals("1")) {
             System.out.println("Você escolheu criar uma conta!!");
+            System.out.println("Vamos começar informando seu nome:");
             nome = scanner.nextLine();
 
-            System.out.println("Vamos começar informando seu nome:");
+            System.out.println();
+
+            System.out.println("Agora sua idade: ");
             idade = Integer.parseInt(scanner.nextLine());
 
+            System.out.println();
+
             System.out.println("E por fim, seu CPF:");
-            cpf = Double.parseDouble(scanner.nextLine());
+            cpf = scanner.nextLine();
+
+            System.out.println();
 
             System.out.println("Conta Criada com Sucesso!!");
             System.out.println("Nome: " + nome);
@@ -36,6 +43,7 @@ public class Conta {
             System.out.println("CPF: " + cpf);
 
         } else if (scanf.equals("2")) {
+            System.out.println();
             System.out.println("Você não escolheu criar a conta!");
             System.out.println("Obrigado pelo contato, volte sempre!!");
         } else {
