@@ -20,7 +20,7 @@ public class Conta {
         System.out.println("2 -> Não");
         String scanf = scanner.nextLine();
 
-        if (scanf.equals(1)) {
+        if (scanf.equals("1")) {
             System.out.println("Você escolheu criar uma conta!!");
             nome = scanner.nextLine();
 
